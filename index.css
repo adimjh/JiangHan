@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddf2d6;
+}
+#chat{
+    width: 850px;
+    margin: 100px auto 0;
+    background-color: #fff;
+    position: relative;
+}
+#chat_title{
+    text-align: center;
+    color: #fff;
+    background-color: #97cc85;
+    line-height: 60px;
+    font-size: 28px;
+}
+#chat_content{
+    height: 520px;
+    display: flex;
+}
+#chat_content .message{
+    width: 70%;
+    height: 470px;
+    list-style: none;
+    border-right: 1px solid #97cc85;
+    padding: 15px;
+    overflow: auto;
+}
+/* 聊天气泡样式 */
+#chat_content .message>li{
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 15px;
+}
+#chat_content .message>li>span{
+    padding: 10px 18px;
+    background-color:   rgba(0, 123, 29, 0.8);
+    border-radius: 18px;
+    color: #333;
+    margin-left: 30px;
+}
+
+#chat_content form{
+    background-color: #000;
+    width: 70%;
+    height: 50px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+
+}
+#chat_content form input{
+    width: 90%;
+    padding: 10px;
+    color: #333;
+    font-size: 18px;
+    border: 1px solid #97cc85;
+    outline: none;
+}
+#chat_content form button{
+    width: 18%;
+    color: #fff;
+    background-color: #97cc85;
+    cursor: pointer1;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+}
+#chat_content .user{
+    width: 30%;
+    line-height: 40px;
+    color: #333;
+}
+#chat_content .user>h2{
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
